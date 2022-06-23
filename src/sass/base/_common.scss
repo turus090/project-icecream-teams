@@ -1,0 +1,33 @@
+body {
+  background-color: var();
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.79;
+  //line-height: 176%;
+  /* or 25px */
+
+  letter-spacing: 0.04em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.link {
+  transition: color var() var();
+
+  &:hover,
+  &:focus {
+    color: var();
+  }
+}
+
+.title {
+  @include mq(desktop) {
+  }
+}
