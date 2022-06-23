@@ -1,5 +1,5 @@
 body {
-  background-color: ;
+  // background-color: ;
   color: var(--primary-text-color);
   font-family: var(--primary-font);
   font-weight: 500;
@@ -18,16 +18,16 @@ img {
   margin: 0;
 }
 
-.link {
-  transition: color;
+// .link {
+//   transition: color;
 
-  &:hover,
-  &:focus {
-    color: ;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: ;
+//   }
+// }
 
-.title {
-  @include mq(desktop) {
-  }
-}
+// .title {
+//   @include mq(desktop) {
+//   }
+// }
