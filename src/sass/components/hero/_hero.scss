@@ -1,9 +1,28 @@
 .hero {
-    background-color: tomato;
+    background-color: #FFB8CA;
+    
+
 }
 
-// .upper-title {
-//     font-size: 26px;
-//     line-height: 1.15;
-//     color: #FFFFFF;
-// }
+.hero-container{
+text-align: left;
+height: 452px;
+background-image: url(/src/images/Ellipse\ 3.png);
+    background-repeat: no-repeat;
+    background-size: 346px;
+    background-position: 11.25vw 33px;
+
+
+}
+.upper-title {
+    text-align: left;
+    font-size: 26px;
+    line-height: 1.15;
+    color: #FFFFFF;
+}
+
+.title {
+  font-size: 48px  
+}
+
+

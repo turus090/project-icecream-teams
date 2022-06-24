@@ -219,5 +219,21 @@ ul {
 
 .hero {
   background-color: tomato;
+  background-image: url(../../components/);
+}
+
+.hero-container {
+  text-align: left;
+}
+
+.upper-title {
+  text-align: left;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.title {
+  font-size: 48px;
 }
 /*# sourceMappingURL=index.css.map */
