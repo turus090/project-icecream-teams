@@ -1,0 +1,137 @@
+.header {
+  background-color: #ffb8ca;
+  position: relative;
+
+  &__container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: #ffffff;
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+  &__list {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.header__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  width: 159px;
+  height: 44px;
+
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.menu__button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.menu__button:focus,
+.menu__button:hover {
+  fill: #ffffff;
+}
+
+.mobile__link {
+  color: #ffffff;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &[aria-expanded='true'] {
+    display: none;
+  }
+}
+
+// .menu-button .icon-cross {
+//   display: none;
+// }
+
+// .menu-button.is-open .icon-cross {
+//   display: block;
+// }
+
+// .menu-button.is-open .icon-menu {
+//   display: none;
+// }
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100vh;
+  background-color: #e17992;
+  &.is-open {
+    display: block;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100vw;
+  }
+}
+
+.header__btn {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #d41443;
+
+  &.desktop__btn {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+
+.mobile__item {
+  border-top: 1px solid black;
+  &:last-child {
+    border-bottom: 1px solid black;
+  }
+}

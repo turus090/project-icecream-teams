@@ -1,0 +1,85 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__container-logo">
+      <svg class="logo__icon" width="199px" height="50px">
+        <use href="./images/icons.svg#logo"></use>
+      </svg>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__list list">
+        <li class="header__item">
+          <a class="header__link link header__link--active" href="">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="">About us</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#contacts">How it's made?</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#contacts">Our products</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+      <!--burger__button-->
+      <button
+        type="button"
+        class="menu-button js-open-menu"
+        aria-controls="menu-container"
+      >
+        <svg width="20" height="15" aria-label="Открытие мобильного меню">
+          <use class="icon-menu" href="./images/icons.svg#menu"></use>
+        </svg>
+      </button>
+      <!--burger__menu-->
+      <div class="menu-container js-menu-container" id="menu-container">
+        <button data-modal-open class="btn" type="button">
+          <span>Buy now</span>
+          <svg width="7" height="15" aria-label="Открытие мобильного меню">
+            <use
+              class="button__arrow"
+              href="./images/icons.svg#button_arrow"
+            ></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="menu-button js-close-menu"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="20" height="15" aria-label="Открытие мобильного меню">
+            <use class="icon-cross" href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile__list list">
+          <li class="mobile__item">
+            <a class="mobile__link link mobile__link--active" href="">Home</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link link" href="">About us</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link link" href="#contacts">How it’s made?</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link link" href="#contacts">Our products</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <button data-modal-open class="btn header__btn desktop__btn" type="button">
+      <span>Buy now</span>
+
+      <svg width="7" height="15" aria-label="Открытие мобильного меню">
+        <use class="button__arrow" href="./images/icons.svg#button_arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>
