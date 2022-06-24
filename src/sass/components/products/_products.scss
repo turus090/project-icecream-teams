@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
 }
+
 .card-contents {
 
     padding-left: 40px;
@@ -46,6 +47,7 @@
 }
 .card-contents__subtitle {
     padding-top: 160px;
+   
     margin-bottom: 32px;
     
     text-align: center;
@@ -69,8 +71,8 @@ line-height: 1.5;
  letter-spacing: 0.04em;
 }
 
-// .product__image {
-//     position: absolute;
-//     top: 50;
-//     left: 50;
-// }
+.product__image {
+   z-index: 1;
+
+    background-color: transparent;
+}
