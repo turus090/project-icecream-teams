@@ -1,96 +1,137 @@
-ul{
-    list-style: none;
+.contacts {
+  // background-image: url(#FFF5F6);
+  background: linear-gradient(to bottom, #ffff 20%, #FFF5F6 80%);
 }
-// .contact-card__list
 
-.contact-card__list::after{
-    width: 100%;
-    height: 1px;
-    background-color: #907e82;
+.contacts-card {
+
 
 }
 
-.contact-card__item {
-    width: 368px;
-    padding: 40px 32px;
-    background-color: rgb(255, 255, 255);
-   
-    border-radius: 24px;
-    margin-bottom: 20px;
-    
-  }
+.contacts-card__list:not(:last-child) {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  
+}
 
-.contact-card__title {
-      display: flex;
-      justify-content: center;
-      width: 80px;
+.contacts-card__item {
+  width: 100%;
+  padding: 40px 32px;
+  background-color: rgb(255, 255, 255);
 
-      margin-bottom: 30px;
-    
-     
-      font-size: 12px;
-      line-height: 1.83;
-      letter-spacing: 0.04em;
-    
-      color: #ffffff;
-    
-      background-color: #f0d1a5;
-      border: 1px solid transparent;
-      border-radius: 4px;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
 
-    
-    //   @media screen and(min-widhgt:768px) {
-    //     display: flex;
-    //     width: 75px;
-    //     justify-content: center;
-    
-    //     font-weight: 500;
-    //     font-size: 16px;
-    //     line-height: 1.86;
-    //     letter-spacing: 0.04em;
-    
-    //     color: #ffffff;
-    
-    //     background-color: #f0d1a5;
-    //     border: 1px solid transparent;
-    //     border-radius: 6px;
-    //   }
-    }
-  
-  .contact-card__city {
-    margin-bottom: 8px;
-  
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-  
-    letter-spacing: 0.04em;
+  &:last-child {
+    margin-bottom: 32px;
   }
-  
-  
-  
-  
-  .contact-card__text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.81;
-  
-    letter-spacing: 0.04em;
-  
-    color: #907e82;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
+}
+
+.contacts-card__item-title {
+  display: inline-flex;
+  justify-content: center;
+  width: 80px;
+
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  background-color: #f0d1a5;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  //   @media screen and(min-widhgt:768px) {
+  //     display: flex;
+  //     width: 75px;
+  //     justify-content: center;
+
+  //     font-weight: 500;
+  //     font-size: 16px;
+  //     line-height: 1.86;
+  //     letter-spacing: 0.04em;
+
+  //     color: #ffffff;
+
+  //     background-color: #f0d1a5;
+  //     border: 1px solid transparent;
+  //     border-radius: 6px;
+  //   }
+}
+.green {
+  background-color: #c2e297;
+  width: 130px;
+}
+
+.contacts-card__item-city {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  letter-spacing: 0.04em;
+}
+
+.contacts-card__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.81;
+
+  letter-spacing: 0.04em;
+
+  color: var(--grey-text-color);
+}
+.contacts-card__time {
+  color: rgba(255, 165, 186, 1);
+}
+
+.contacts-card__item-working {
+  margin-bottom: 8px;
+}
+.contacts-card__item-auth {
+  border-bottom: none;
+}
+.contacts-card__link {
+  color: var(--grey-text-color);
+}
+
+.contacts-card__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+padding-bottom: 30px;
+}
+
+.btn{
+
+ width: 162px;
+
+}
+
+.btn:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.btn::after {
+  content: ' ';
+
+  width: 8px;
+  height: 10px;
+
+  fill:currentColor;
+  background-image: url(../images/right-arrow.svg);
+  background-repeat: no-repeat;
+  margin-left: 12px;
+
+  background-size: contain;
+  background-position: center;
+}
+
