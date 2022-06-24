@@ -1,12 +1,10 @@
 body {
   // background-color: ;
   color: var(--primary-text-color);
-  font-family: var(--primary-font);
+  font-family: var(--primary-font), sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.79;
-  //line-height: 176%;
-  /* or 25px */
 
   letter-spacing: 0.04em;
 }
@@ -27,7 +25,58 @@ img {
 //   }
 // }
 
-// .title {
-//   @include mq(desktop) {
-//   }
-// }
+.upper-title {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+
+  @include mq(tablet) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.title {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #d41443;
+
+  @include mq(tablet) {
+    font-size: 48px;
+  }
+
+  @include mq(desktop) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.btn-red {
+  font-family: inherit;
+  text-align: center;
+
+  border-radius: 22px;
+  background-color: #d41342;
+  cursor: pointer;
+}
+
+.btn-white {
+  font-family: inherit;
+  text-align: center;
+
+  border-radius: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
