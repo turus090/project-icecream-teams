@@ -9,21 +9,17 @@ body {
   letter-spacing: 0.04em;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0;
 }
-
-// .link {
-//   transition: color;
-
-//   &:hover,
-//   &:focus {
-//     color: ;
-//   }
-// }
 
 .upper-title {
   font-family: 'Titan One';
@@ -63,20 +59,37 @@ img {
   }
 }
 
-.btn-red {
-  font-family: inherit;
-  text-align: center;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 107px;
+  height: 44px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
 
   border-radius: 22px;
-  background-color: #d41342;
+  border: none;
   cursor: pointer;
 }
 
-.btn-white {
-  font-family: inherit;
-  text-align: center;
+.btn--red {
+  color: #ffffff;
+  background-color: #d41442;
+}
 
-  border-radius: 22px;
+.btn--white {
+  color: #d41443;
   background-color: #ffffff;
-  cursor: pointer;
+}
+
+.btn--hero {
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29px;
 }
