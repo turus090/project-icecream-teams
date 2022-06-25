@@ -190,10 +190,19 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+
   width: 100%;
 }
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
 
 @media screen and (min-width: 768px) {
   .container {
@@ -210,6 +219,26 @@ ul {
     padding-right: 16px;
   }
 }
+
+
+.hero {
+  background-color: tomato;
+  background-image: url(../../components/);
+}
+
+.hero-container {
+  text-align: left;
+}
+
+.upper-title {
+  text-align: left;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.title {
+  font-size: 48px;
 
 .about {
   text-align: center;
@@ -278,5 +307,6 @@ ul {
   padding-left: 37px;
   color: #D41443;
   background-color: #FFFFFF;
+
 }
 /*# sourceMappingURL=index.css.map */
