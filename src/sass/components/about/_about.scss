@@ -2,8 +2,6 @@
 
 .about {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: #FFF5F6 ;
 }
 
@@ -30,6 +28,9 @@
     // display: flex;
     // flex-wrap: wrap; 
     text-align: left;
+    font-size: 12px;
+    line-height: 1.58;
+    color: var(--grey-text-color);
     @media screen and (max-width: 767px) {
             background-size: 100%;
                 background-repeat: no-repeat;
@@ -44,20 +45,14 @@
                         }
     
         }
-   
-
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.58;
-        
-        color: #907E82;
+       
 }
 
 .about-description__lable {
     margin-right: 60px;
     margin-bottom: 30px;
 
-    color: #000000;
+    color: var(--primary-text-black);
 }
 
 .about-description__text {
@@ -68,7 +63,7 @@
 .about-description__addition {
         margin-right: 60px;
         margin-bottom: 20px;
-        
+       
 
 }
 
@@ -78,6 +73,6 @@
     text-align: center;
     padding-right: 37px;
     padding-left: 37px;
-    color: #D41443;
-    background-color: #FFFFFF;
+    color: var(--red-text-color);
+    background-color: var(--main-bgc);
 }
