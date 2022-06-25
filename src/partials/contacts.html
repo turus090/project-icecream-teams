@@ -139,11 +139,13 @@
     
 
     </ul>
-    <ul class="contacts-card__btn list">
-      <button class="btn btn--red" type="button" data-modal-open=>Our Locations
-      </button>
-      <button class="btn btn--white" type="button">Franchise</button>
-    </ul>
+    <div class="contacts-btn">
+      <ul class="contacts-card__btn list">
+        <li class="contacts-btn__item"><button class="btn btn--red" type="button">Our Locations</button></li>
+        <li class="contacts-btn__item"><button class="btn btn--white" type="button" data-modal-open>Franchise</button></li>
+      </ul>
+  
+    </div>
 
   </div>
   <!-- // +++++++++++++++++++++++
@@ -155,16 +157,15 @@
 
 <div class="backdrop is-hidden" data-modal>
 <div class="modal-data">
-  <button class="modal-data-btn" type="button" data-modal-close>
-    <svg class="modal-data__svg" width="18" height="18">
-      <!-- <use href="./img/icons/symbol-defs.svg#close"></use> -->
-    </svg>
-    &times
-  </button>
+  <button class="modal-data-btn" type="button" data-modal-close>X</button>
+    <!-- <svg class="modal-data__svg" width="18" height="18">
+      <--<use href="./img/icons/symbol-defs.svg#close"></use> -->
+    <!-- </svg> --> 
+    
 
 <p class="modal-data__title upper-title">ice cream made with</p>
 
-  < class="modal-data__title title ">passion</>
+  <p class="modal-data__title title ">passion</p>
   <p class="modal-data__title">leave your details we will call you back</p>
   <form class="modal-data__form">
     <div class="data-group">
@@ -178,7 +179,7 @@
 
       <!-- <svg class="data-group__svg" width="18" height="18">
         <use href="./img/icons/symbol-defs.svg#person"></use> -->
-      </svg>
+      <!-- </svg> -->
     </div>
 
     <div class="data-group">
