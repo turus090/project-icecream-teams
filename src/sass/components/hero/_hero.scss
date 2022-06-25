@@ -1,6 +1,14 @@
 .hero {
+    display: block;
   background-color: #ffb8ca;
   overflow: hidden;
+background-image: 
+        url(/src/images/Ellipse\ 3.png);
+background-repeat: no-repeat;
+background-position-x: calc(50% + 50px);
+background-position-y: calc(50% - 20px);
+background-size: 346px; 
+
 }
 
 .hero-container {
@@ -8,12 +16,12 @@
   height: 452px;
   overflow: hidden;
 
-  background-image: url(/src/images/slider-pic7\ 1.png),
-    url(/src/images/Ellipse\ 3.png);
+  background-image: url(/src/images/slider-pic7\ 1.png);
+    
   background-repeat: no-repeat;
-  background-size: 171px, 346px;
-  background-position: 117px bottom, 36px 33px;
-  // padding-left: 5vw;
+  background-size: 171px;
+  background-position: 117px bottom;
+  
   padding-top: 144px;
 }
 .upper-title {

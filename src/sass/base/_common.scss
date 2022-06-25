@@ -86,6 +86,11 @@ img {
   background-color: #ffffff;
 }
 
+.btn--white:focus,
+.btn--white:hover {
+  background-color: #ECEBEB;
+}
+
 .btn--hero {
   height: 40px;
 
