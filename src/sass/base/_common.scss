@@ -9,6 +9,10 @@ body {
   letter-spacing: 0.04em;
 }
 
+body.modal-open{
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
