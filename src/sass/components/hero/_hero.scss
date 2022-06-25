@@ -1,28 +1,57 @@
 .hero {
-    background-color: #FFB8CA;
-    
-
+  background-color: #ffb8ca;
+  overflow: hidden;
 }
 
-.hero-container{
-text-align: left;
-height: 452px;
-background-image: url(/src/images/Ellipse\ 3.png);
-    background-repeat: no-repeat;
-    background-size: 346px;
-    background-position: 11.25vw 33px;
+.hero-container {
+  text-align: left;
+  height: 452px;
+  overflow: hidden;
 
-
+  background-image: url(/src/images/slider-pic7\ 1.png),
+    url(/src/images/Ellipse\ 3.png);
+  background-repeat: no-repeat;
+  background-size: 171px, 346px;
+  background-position: 117px bottom, 36px 33px;
+  // padding-left: 5vw;
+  padding-top: 144px;
 }
 .upper-title {
-    text-align: left;
-    font-size: 26px;
-    line-height: 1.15;
-    color: #FFFFFF;
+  text-align: left;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .title {
-  font-size: 48px  
+  display: inline-block;
+  font-size: 48px;
+  line-height: 1.01;
 }
 
+.hero-list {
+  display: flex;
+}
 
+.btn--hero {
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 20px;
+  height: 24px;
+  min-width: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.hero-list__item {
+  margin-right: 8px;
+}
+
+.hero-list__item:last-child {
+  margin-right: 0;
+}
