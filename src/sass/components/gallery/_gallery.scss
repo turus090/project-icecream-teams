@@ -1,0 +1,43 @@
+.gallery {
+    background-image: linear-gradient(to bottom, #FFF5F6 20%, #FFFFFF 20%);
+
+    @include mq(tablet) {
+        background-image: linear-gradient(to bottom, #FFF5F6 57%, #FFFFFF 57%);
+    }
+
+    @include mq(desktop){
+        background-image: linear-gradient(to bottom, #FFF5F6 21%, #FFFFFF 21%);
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.gallery__list {
+    width: 100%;
+    
+    display: grid;
+}
+
+.gallery__img {
+    @include mq(tablet){
+        width: 105px;
+        height: 105px;
+    }
+
+    @include mq(desktop){
+        width: 138px;
+        height: 138px;
+    }
+}
+
+.gallery__img--big {
+    @include mq(tablet) {
+        width: 215px;
+        height: 215px;
+    }
+    
+    @include mq(desktop) {
+        width: 283px;
+        height: 283px;
+    }
+}

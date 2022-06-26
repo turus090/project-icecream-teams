@@ -1,0 +1,65 @@
+.review__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    border-radius: 50%;
+}
+
+.review__text-wrapper {
+    padding-top: 43px;
+    padding-bottom: 17px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 36px;
+
+    background-color: #FAFAFA;
+}
+
+.review__text {
+    position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 1px;
+    text-align: center;
+    z-index: 1;
+
+    font-size: 12px;
+    line-height: 2.58;
+
+    background: repeating-linear-gradient(#FAFAFA, #FAFAFA 30px, #E1E1E1 31px);
+
+    &::before {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+
+        content: ' ';
+        width: 54px;
+        height: 40px;
+
+        background-image: url("../images/reviews/quotes.svg");
+        z-index: -1;
+    }
+}
+
+.review__user-data {
+    position: relative;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.86;
+
+    &::before {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translatex(-50%);
+
+        content: ' ';
+        width: 32px;
+        height: 4px;
+
+        background-image: url("../images/reviews/reddots.svg");
+    }
+}
