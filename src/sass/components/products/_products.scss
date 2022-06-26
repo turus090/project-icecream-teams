@@ -51,12 +51,9 @@
   text-align: center;
   position: relative;
   width: 280px;
-
-    // height: 489px;
-  padding-bottom: 40px;
-
-  background-color: #ffb8ca;
+ background-color: #ffb8ca;
   border-radius: 24px;
+
   &--yellow {
     background-color: #f0d1a5;
   }
@@ -80,14 +77,17 @@
 .products__image {
   position: absolute;
   top: -28%;
-  left: 0%;
+  left: 0;
   z-index: 10;
   background-color: transparent;
-
+transform: scale(1, 1);
+transition: transform 250ms cubic-bezier(1, 0, 0, 1);
   @media screen and (min-width: 1200px) {
-    position:absolute;
-top: -50%;
-left: 0;
+   top: -50%;
+// left: 0;
+  }
+  &:hover {
+    transform: scale(-1, 1);
   }
 }
 .products__icon {
@@ -153,4 +153,19 @@ margin-bottom: 60px;
   border: transparent;
   width: 40px;
   height: 40px;
+  transition: background-color 400ms ease-in-out;
+      &--hover-green:hover,
+        &--hover-green:focus {
+          background-color: #C2E297;
+        }
+      
+        &--hover-pink:hover,
+        &--hover-pink:focus {
+          background-color: #FFB8CA;
+        }
+      
+        &--hover-yellow:hover,
+        &--hover-yellow:focus {
+          background-color: #F0D1A5;
+        }
 }
