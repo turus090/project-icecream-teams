@@ -1,0 +1,138 @@
+.advantages {
+background-color: var(--secondary-bgc);
+padding-bottom: 60px;
+@media (min-width:768px) and (max-width:1199px) {
+    padding-bottom: 64px;
+}
+
+}
+
+.advantages__list {
+    @media (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        
+}
+}
+
+
+
+.list__item {
+  
+    
+    &:not(:last-child) {
+        @media (max-width: 767px) {
+        margin-bottom: 32px;
+        }}
+                
+        @media (min-width:768px) and (max-width:1199px) {
+        flex-basis: calc((704 - 96) / 4);
+       
+
+        margin-right: 32px;
+        &:nth-child(4n + 4) {
+            margin-right: 0;            }
+                 }
+
+        
+
+}
+.list__item__header { 
+    
+    font-family: titan one;
+    font-size: 36;
+    font-weight: 400;
+    color: #D41443;
+    margin-bottom: 30px;
+    
+
+    @media (min-width:768px) and (max-width:1199px) {
+        margin-bottom: 13px;
+
+       font-size: 48px;
+       line-height: 1.15;
+       letter-spacing: inherit ;  
+    }
+}
+
+  .class__for__before--1:before {
+      margin-bottom: 16px;
+
+@media (min-width:768px) and (max-width:1199px) {
+        margin-bottom: 36px;
+    }
+
+
+      content: '';
+      display: block;
+      width: 33px;
+      height: 50px;
+    //   outline: 1px black solid;
+    //   background-color: orange;
+      background-image: url(../images/advantages-svg/advantages-icon-1.svg);
+     background-origin: border-box;
+
+      background-size: contain;
+    //   z-index: 999;
+  }
+
+.class__for__before--2:before {
+    margin-bottom: 16px;
+
+    @media (min-width:768px) and (max-width:1199px) {
+            margin-bottom: 36px;
+        }
+
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    // outline: 1px black solid;
+    // background-color: orange;
+    background-image: url(/src/images/advantages-svg/advantages-icon-2.svg);
+
+    background-size: contain;
+   
+}
+
+.class__for__before--3:before {
+    margin-bottom: 16px;
+
+    @media (min-width:768px) and (max-width:1199px) {
+            margin-bottom: 36px;
+        }
+
+    content: '';
+    display: block;
+    width: 44px;
+    height: 50px;
+    // outline: 1px black solid;
+    // background-color: orange;
+    background-image: url(/src/images/advantages-svg/advantages-icon-3.svg);
+
+    background-size: contain;
+   
+}
+
+
+
+.list__item__text {
+
+    
+
+    font-family: var(--primary-font);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.7;
+        letter-spacing: 0em;
+
+        padding-right: 50px;
+        
+        @media (min-width:768px) and (max-width:1199px) {
+            padding-right: 0;
+
+            font-size: 13.5px;
+            line-height: 1.74;
+
+        }
+    }
