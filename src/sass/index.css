@@ -195,8 +195,37 @@ ul {
   padding-bottom: 60px;
 }
 
-.list__item:not(:last-child) {
-  margin-bottom: 32px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .advantages {
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.list__item {
+  outline: 1px red solid;
+}
+
+@media (max-width: 767px) {
+  .list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .list__item {
+    flex-basis: calc((704 - 96) / 4);
+    margin-right: 32px;
+  }
+  .list__item:nth-child(4n + 4) {
+    margin-right: 0;
+  }
 }
 
 .list__item__header {
@@ -207,8 +236,17 @@ ul {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .list__item__header {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: inherit;
+  }
+}
+
 .class__for__before--1:before {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   content: '';
   display: block;
   width: 33px;
@@ -218,8 +256,14 @@ ul {
   background-size: contain;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .class__for__before--1:before {
+    margin-bottom: 36px;
+  }
+}
+
 .class__for__before--2:before {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   content: '';
   display: block;
   width: 50px;
@@ -228,14 +272,26 @@ ul {
   background-size: contain;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .class__for__before--2:before {
+    margin-bottom: 36px;
+  }
+}
+
 .class__for__before--3:before {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   content: '';
   display: block;
   width: 44px;
   height: 50px;
   background-image: url(/src/images/advantages-svg/advantages-icon-3.svg);
   background-size: contain;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .class__for__before--3:before {
+    margin-bottom: 36px;
+  }
 }
 
 .list__item__text {
@@ -245,4 +301,12 @@ ul {
   line-height: 1.7;
   letter-spacing: 0em;
   padding-right: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .list__item__text {
+    padding-right: 0;
+    font-size: 13.5px;
+    line-height: 1.74;
+  }
 }
