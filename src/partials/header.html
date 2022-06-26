@@ -34,55 +34,54 @@
         </svg>
       </button>
       <!--burger__menu-->
-      <div class="menu-container js-menu-container" id="menu-container">
-        <button
-          type="button"
-          class="menu-button js-close-menu"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg width="20" height="15" aria-label="Закрытие мобильного меню">
-            <use class="icon-cross" href="./images/icons.svg#cross"></use>
-          </svg>
-        </button>
-        <button
-          data-modal-open
-          class="btn header__btn header__btn-menu"
-          type="button"
-        >
-          <span class="header__btn-text">Buy now</span>
-          <svg width="7" height="15">
-            <use
-              class="button__arrow"
-              href="./images/icons.svg#button_arrow"
-            ></use>
-          </svg>
-        </button>
+      <div class="backdrop">
+        <div class="menu-container js-menu-container" id="menu-container">
+          <button
+            type="button"
+            class="menu-button js-close-menu"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="20" height="15" aria-label="Закрытие мобильного меню">
+              <use class="icon-cross" href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+          <button
+            data-modal-open
+            class="btn header__btn header__btn-menu"
+            type="button"
+          >
+            Buy now
+            <svg class="button__arrow" width="7" height="15">
+              <use href="./images/icons.svg#button_arrow"></use>
+            </svg>
+          </button>
 
-        <ul class="mobile__list list">
-          <li class="mobile__item">
-            <a class="mobile__link link" href="#home">Home</a>
-          </li>
-          <li class="mobile__item">
-            <a class="mobile__link link" href="#about">About us</a>
-          </li>
-          <li class="mobile__item">
-            <a class="mobile__link link" href="#tradition">How it’s made?</a>
-          </li>
-          <li class="mobile__item">
-            <a class="mobile__link link" href="#products">Our products</a>
-          </li>
-          <li class="mobile__item">
-            <a class="mobile__link link" href="#contacts">Contact</a>
-          </li>
-        </ul>
+          <ul class="mobile__list list">
+            <li class="mobile__item">
+              <a class="mobile__link link" href="#home">Home</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="#about">About us</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="#tradition">How it’s made?</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="#products">Our products</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <button data-modal-open class="btn header__btn desktop__btn" type="button">
-      <span class="header__btn-text">Buy now</span>
+      Buy now
 
-      <svg width="7" height="15">
-        <use class="button__arrow" href="./images/icons.svg#button_arrow"></use>
+      <svg class="button__arrow" width="7" height="15">
+        <use href="./images/icons.svg#button_arrow"></use>
       </svg>
     </button>
   </div>
