@@ -4,8 +4,21 @@
     
     text-align: center;
     background-color: #FFF5F6 ;
-   
+    @media screen and (min-width: 1200px) {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 70%;
+            background-image:
+                url(../images/about-image/bg-about-image-desk@1x.png);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/about-image/bg-about-image-desk@2x.png);
+            }
 
+}
 }
 
 .about-upper-title {
@@ -25,8 +38,9 @@
     font-weight: 400;
     @media screen and (min-width: 768px) {
             margin-bottom: 40px;
-    
-        }
+        } @media screen and (min-width: 768px) {
+             margin-bottom: 60px;
+         }
 }
 
 .about-card {
@@ -127,8 +141,7 @@
             }
                 @media screen and (min-width: 1200px) {
                     margin-right: 105px;
-                  
-                    
+                        
                 }
 
 }
