@@ -1,9 +1,33 @@
+.reviews-container {
+    @include mq(tablet){
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 .review__img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
 
     border-radius: 50%;
+
+    transition: transform 250ms ease,
+                box-shadow 250ms ease;
+
+    &:hover,
+    &:focus {
+            transform: scale(1.1);
+            box-shadow: 0 0 18px #c4c4c1;
+        }
+
+    @include mq(tablet) {
+        margin-bottom: 57px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 16px;
+    }
 }
 
 .review__text-wrapper {
@@ -14,6 +38,35 @@
     margin-bottom: 36px;
 
     background-color: #FAFAFA;
+
+    transition: transform 250ms ease,
+                box-shadow 250ms ease,
+                border-radius 250ms ease;
+
+    &:hover,
+    &:focus {
+            transform: scale(1.05);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 24px;
+        }
+
+    @include mq(tablet) {
+        padding: 0;
+        margin-bottom: 50px;    
+    }
+
+    @include mq (tablet-only) {
+        background-color: var(--main-bgc);
+    }
+
+    @include mq(desktop) {
+        padding: 32px 72px;
+        margin-bottom: 36px;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 968px;
+    }
 }
 
 .review__text {
@@ -40,6 +93,20 @@
 
         background-image: url("../images/reviews/quotes.svg");
         z-index: -1;
+    }
+
+    @include mq (tablet) {
+        width: 608px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mq (tablet-only) {
+        background: repeating-linear-gradient(#FFFFFF, #FFFFFF 30px, #E1E1E1 31px);
+    }
+
+    @include mq (desktop) {
+        width: 822px;
     }
 }
 
