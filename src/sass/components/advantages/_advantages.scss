@@ -18,7 +18,7 @@ padding-bottom: 60px;
 
 
 .list__item {
-    outline: 1px red solid;
+  
     
     &:not(:last-child) {
         @media (max-width: 767px) {
@@ -27,7 +27,7 @@ padding-bottom: 60px;
                 
         @media (min-width:768px) and (max-width:1199px) {
         flex-basis: calc((704 - 96) / 4);
-        // height: 220px;
+       
 
         margin-right: 32px;
         &:nth-child(4n + 4) {
