@@ -2,25 +2,28 @@
     display: block;
   background-color: #ffb8ca;
   overflow: hidden;
+  @media screen and (max-width: 768px){
 background-image: 
         url(/src/images/Ellipse\ 3.png);
 background-repeat: no-repeat;
 background-position-x: calc(50% + 50px);
 background-position-y: calc(50% - 20px);
-background-size: 346px;
+background-size: 346px;}
 
-@media screen and (min-width: 768px) {
+// @media screen and (min-width: 768px) {
 
-    background-image:
-      url(/src/images/hero-img/ellipse-tab.png);
-      background-position-x: calc(50% + 50px);
-        background-position-y: calc(50% );
-        background-size: 335px;
+//     background-image: 
+    
+//       url(/src/images/hero-img/ellipse-tab.png);
+//       background-position-x: calc(50% + 50px);
+//         background-position-y: calc(50% + 30px);
+//         background-size: 335px;
+        
     
 
 
     
-  }
+//   }
 
 
 }
@@ -35,7 +38,7 @@ background-size: 346px;
     
   background-repeat: no-repeat;
   background-size: 171px;
-  background-position: 117px bottom;
+  background-position: calc(50% + 43px) bottom;
   
   padding-top: 144px;
     @mixin mq($retina) {
@@ -48,9 +51,10 @@ background-size: 346px;
          @media screen and (min-width: 768px) {
                    
           background-image: 
-            url(/src/images/hero-img/IceCream-hero-tab.png);
-            background-position: 322px bottom;
-            background-size: 143px;
+            url(/src/images/hero-img/IceCream-hero-tab.png),
+            url(/src/images/hero-img/ellipse-tab.png);
+            background-position: 322px bottom, 248px 80px;
+            background-size: 143px, 335px;
 
     
           @mixin mq($retina) {
@@ -100,8 +104,8 @@ background-size: 346px;
   border-radius: 20px;
   height: 24px;
   min-width: auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .hero-list__item {
@@ -119,6 +123,10 @@ background-size: 346px;
 
 .hero__img {
   position: absolute;
+@media screen and (max-width: 768px){
+display: none;
+}
+
 }
 
 .hero__img--tasty {
@@ -139,4 +147,47 @@ background-size: 346px;
 .hero__img--cafes {
   bottom: 280px;
   right: 32px;
+}
+
+
+
+
+.hero__text {
+  display: block;
+  position: absolute;
+  width: 114px;
+  height: 48px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #FFFFFF;
+  bottom: 81px;
+  left: 184px;
+  letter-spacing: 0;
+  @media screen and (max-width: 768px) {
+      display: none;
+  
+    }
+}
+
+.hero__btn {
+  position: absolute;
+  left: 184px;
+  bottom: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+  border: transparent;
+  width: 18px;
+  height: 18px;
+  @media screen and (max-width: 768px){
+    display: none;
+
+  }
 }
