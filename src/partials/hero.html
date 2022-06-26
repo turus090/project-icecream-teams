@@ -1,20 +1,138 @@
 
-<link rel="stylesheet" href="./sass/index.scss" />
 <!-- Секция герой -->
 <section class="hero">
-    
-    <div class="container hero-container">
-       
-        <h1 class="upper-title">ice cream <br> made with <br><span class="title">passion</span></h1>
-        <ul class="hero-list list">
-            <li class="hero-list__item">
-                <button class="btn btn--hero btn--red" href="#products"  type="button">Products</button>
-            </li>
-            <li class="hero-list__item">
-                <button class="btn btn--hero btn--white" href="#tradition" type="button">How it’s made?</button>
-            </li>
-        </ul>
+  <div class="container hero-container">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero-img/cafes-tab.png    1x,
+          ./images/hero-img/cafes-tab@2x.png 2x
+        "
+        type="image/png"
+      />
 
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero-img/cafes-desctop.png    1x,
+          ./images/hero-img/cafes-desctop@2x.png 2x
+        "
+        type="image/png"
+      />
 
+      <img
+        class="hero__img hero__img--cafes"
+        src="./images/hero-img/cafes-tab.png"
+        alt="cafes"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero-img/trucks-tab.png    1x,
+          ./images/hero-img/trucks-tab@2x.png 2x
+        "
+        type="image/png"
+      />
 
-    </div>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero-img/trucks-desctop.png    1x,
+          ./images/hero-img/trucks-desctop@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        class="hero__img hero__img--trucks"
+        src="./images/hero-img/trucks-tab.png"
+        alt="trucks"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero-img/milk-hero-tab.png    1x,
+          ./images/hero-img/milk-hero-tab@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero-img/milk-hero-desctop.png    1x,
+          ./images/hero-img/milk-hero-desctop@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        class="hero__img hero__img--milk"
+        src="./images/hero-img/milk-hero-tab.png"
+        alt="trucks"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero-img/tasty-tab.png    1x,
+          ./images/hero-img/tasty-tab@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero-img/tasty-desctop.png    1x,
+          ./images/hero-img/tasty-desctop@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        class="hero__img hero__img--tasty"
+        src="./images/hero-img/tasty-tab.png"
+        alt="trucks"
+      />
+    </picture>
+
+   
+
+    <h1 class="hero__title">
+      ice cream <br />
+      made with <br /><span class="hero__title">passion</span>
+    </h1>
+    <ul class="hero-list list">
+      <li class="hero-list__item">
+        <button class="btn btn-hero btn--red" href="#products" type="button">
+          Products
+        </button>
+      </li>
+      <li class="hero-list__item">
+        <button
+          class="btn btn-hero btn--white"
+          href="#tradition"
+          type="button"
+        >
+          How it’s made?
+        </button>
+      </li>
+    </ul>
+    <p class="hero__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
+    <button type="button" class="hero__btn">
+      <svg class="products__icon">
+        <use href="./images/icons.svg#right"></use>
+      </svg>
+    </button>
+  </div>
+</section>
