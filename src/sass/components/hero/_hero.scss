@@ -9,10 +9,24 @@ background-position-x: calc(50% + 50px);
 background-position-y: calc(50% - 20px);
 background-size: 346px;
 
+@media screen and (min-width: 768px) {
+
+    background-image:
+      url(/src/images/hero-img/ellipse-tab.png);
+      background-position-x: calc(50% + 50px);
+        background-position-y: calc(50% );
+        background-size: 335px;
+    
+
+
+    
+  }
+
 
 }
 
 .hero-container {
+  position: relative;
   text-align: left;
   height: 452px;
   overflow: hidden;
@@ -28,7 +42,22 @@ background-size: 346px;
         background-image:
       url(/src/images/slider-pic7\ 1@2x.png);
 
+
     }
+
+         @media screen and (min-width: 768px) {
+                   
+          background-image: 
+            url(/src/images/hero-img/IceCream-hero-tab.png);
+            background-position: 322px bottom;
+            background-size: 143px;
+
+    
+          @mixin mq($retina) {
+            background-image:
+              url(/src/images/hero-img/IceCream-hero-tab@2x.png);
+          }
+        }
 
 
 }
@@ -42,12 +71,23 @@ background-size: 346px;
 
   color: #ffffff;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px){
+    font-size: 22px;
+      line-height: 25px;
+      
+  }
 }
 
 .title {
   display: inline-block;
   font-size: 48px;
   line-height: 1.01;
+
+  @media screen and (min-width: 768px){
+    font-size: 34px;
+      line-height: 90.5%;
+  }
 }
 
 .hero-list {
@@ -70,4 +110,33 @@ background-size: 346px;
 
 .hero-list__item:last-child {
   margin-right: 0;
+}
+
+.cafes-tab {
+  width: 43px;
+}
+
+
+.hero__img {
+  position: absolute;
+}
+
+.hero__img--tasty {
+  bottom: 0;
+  right: 32px;
+}
+
+.hero__img--milk {
+  bottom: 16px;
+  left: 32px;
+}
+
+.hero__img--trucks {
+  bottom: 221px;
+  right: 32px;
+}
+
+.hero__img--cafes {
+  bottom: 280px;
+  right: 32px;
 }
