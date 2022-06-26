@@ -1,40 +1,23 @@
-.products__upper-tittle {
-  font-family: 'Titan One';
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
+.products__upper-title {
 
-  color: #ffa5ba;
   margin-bottom: 15px;
   @media screen and (min-width: 768px) {
-    font-size: 26px;
-    line-height: 1.15;
+  
     font-weight: 400;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 30px;
-    line-height: 1.13;
-  }
+ 
 }
-.products__tittle {
-  font-family: 'Titan One';
-  font-size: 34px;
-  line-height: 1.15;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #d41443;
+.products__title {
+ color: #d41443;
   margin-bottom: 140px;
   @media screen and (min-width: 768px) {
-    font-size: 48px;
+   
     margin-bottom: 158px;
     font-weight: 400;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 281px;
-    font-size: 58px;
-    line-height: 1.14;
+  
   }
 }
 
@@ -175,6 +158,7 @@
   border: transparent;
   width: 40px;
   height: 40px;
+  cursor: pointer;
   transition: background-color 400ms ease-in-out;
   &--hover-green:hover,
   &--hover-green:focus {
@@ -191,3 +175,4 @@
     background-color: #f0d1a5;
   }
 }
+
