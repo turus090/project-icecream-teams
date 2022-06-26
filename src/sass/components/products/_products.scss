@@ -175,4 +175,49 @@
     background-color: #f0d1a5;
   }
 }
+.continue {
+  display: none;
+}
+
+.checkbox:checked+.continue {
+  display: block;
+}
+.text-more {
+  position: absolute;
+  top: 78%;
+  left: 25%;
+  
+font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 1.15;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+ animation: text 2s 1;
+   @media screen and (min-width: 768px) {
+    top: 77%;
+    left: 19%;
+  }
+  @media screen and (min-width: 1200px){
+    top: 73%;
+      left: 25%;
+      font-size: 20px;
+  }
+
+}
+
+@keyframes text {
+  0% {
+color: transparent;
+
+  }
+
+  85% {
+   
+    color: var(--white-text-color);
+    }
+  
+  }
 
