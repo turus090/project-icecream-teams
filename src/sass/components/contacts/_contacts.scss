@@ -1,4 +1,7 @@
 @import "./modalContacts";
+@import "./modalMaps";
+
+
 
 
 
@@ -72,6 +75,7 @@
   display: inline-flex;
   justify-content: center;
   width: 80px;
+ 
 
   margin-bottom: 30px;
 
@@ -142,7 +146,7 @@
 
 .contacts-card__btn {
 
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   
   text-align: center;
 

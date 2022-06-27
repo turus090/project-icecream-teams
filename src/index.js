@@ -69,3 +69,28 @@
 
 }
 )();
+
+// модальное окно maps
+
+(() => {
+  const refs = {
+    openmapsBtn: document.querySelector("[data-maps-open]"),
+    closemapsBtn: document.querySelector("[data-maps-close]"),
+    maps: document.querySelector("[data-maps]"),
+  };
+
+  refs.openmapsBtn.addEventListener("click", togglemaps);
+  refs.closemapsBtn.addEventListener("click", togglemaps);
+
+  function togglemaps() {
+    refs.maps.classList.toggle("is-hidden");
+  }
+
+  function togglemaps() {
+    document.body.classList.toggle("maps-open");
+    refs.maps.classList.toggle("is-hidden");
+
+  }
+
+}
+)();
