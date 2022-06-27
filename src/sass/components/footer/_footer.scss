@@ -1,20 +1,28 @@
 .footer {
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: var(--secondary-bgc);
-    &__container {
-         
+    @media screen and (min-width: 1200px) {
+        background-color: var(--main-bgc);
+    }
+    &__container { 
         @media screen and (min-width: 768px) {
             max-width: 768px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+
         }
         @media screen and (min-width: 1200px) {
+            padding-top: 40px;
             padding-left: 20px;
             padding-right: 20px;
             max-width: 1200px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: var(--main-bgc);
+
         }
     }
 
