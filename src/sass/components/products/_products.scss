@@ -85,12 +85,19 @@
   top: -28%;
   left: 0;
   z-index: 10;
+  
   background-color: transparent;
   transform: scale(1, 1);
   transition: transform 250ms cubic-bezier(1, 0, 0, 1);
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 224px;
+  }
   @media screen and (min-width: 1200px) {
     top: -50%;
     // left: 0;
+    width: 368px;
+    height: 394px;
   }
   &:hover {
     transform: scale(-1, 1);
