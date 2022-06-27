@@ -1,9 +1,17 @@
 .footer {
     background-color: var(--secondary-bgc);
     &__container {
-        max-width: 480px; 
+         
         @media screen and (min-width: 768px) {
             max-width: 768px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1200px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -16,13 +24,17 @@
         @media screen and (min-width: 768px) {
             flex-wrap: wrap;
             width: 340px;
-
         }
+        @media screen and (min-width: 1200px) {
+            width: unset;
+            
+        }
+
 
     }
 
     &__upper-title {
-        color: var(--red-text-color);
+        
         text-align: start;
         padding-bottom: 16px;
 
@@ -38,18 +50,19 @@
         gap: 30px;
         list-style: none;
         justify-content: end;
+        margin-bottom: 40px;
 
 
         &__link {
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin-bottom: 40px;
+            align-items: center;               
             width: 32px;
             height: 32px;
             color: var(--white-text-color);
             background-color: var(--social-icon-bgc);
             border-radius: 50%;
+            transition: var(--timing-bezier), var(--transition-duration);
 
 
             &:hover,
@@ -74,6 +87,14 @@
             font-weight: 700;
             font-size: 12px;
             line-height: 22.32px;
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 26px;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 30px;  
+            }
         }
         &__address {
             font-size: 12px;
@@ -86,21 +107,42 @@
             font-weight: 500;
             line-height: 22.32px;
             color: var(--red-text-color);
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 26px;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 30px;  
+            }
             
         }
 
     }
 
     .footer-contect {
-        padding-top: 15px;
+        padding-top: 16px;
+        padding-bottom: 3px;
         border-top: 1px solid #E1E1E1;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            padding-top: 8px;
+        }
+        
+
 
         &__text {
             font-size: 14px;
-            font-weight: 500;
-            line-height: 1.79;
+            font-weight: 700;
+            line-height: 21px;
             color: var(--grey-text-color);
             text-align: center;
+
+            @media screen and (min-width: 768px) {
+                line-height: 26px;
+                letter-spacing: 2%;
+            }
         }
     }
 }
