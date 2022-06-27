@@ -3,7 +3,10 @@
 .about {
     
     text-align: center;
-    background-color: #FFF5F6 ;
+    background-color: var(--secondary-bgc) ;
+    @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+    }
     @media screen and (min-width: 1200px) {
             background-size: 100%;
             background-repeat: no-repeat;
@@ -151,11 +154,34 @@
 
 
 .about-description__btn {
-    text-align: center;
     padding-right: 37px;
     padding-left: 37px;
+    text-align: center;
     color: var(--red-text-color);
     background-color: var(--main-bgc);
+         &:focus,
+           &:hover {
+            background-color: #ecebeb;
+             box-shadow: inset 3px 3px 10px #da4141;
+        }
+
+    display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    
+        min-width: 107px;
+        height: 44px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+    
+        border-radius: 22px;
+        border: none;
+        cursor: pointer;
+    
+
+
 }
 .about-button__arrow {
     margin-left: 15px;
