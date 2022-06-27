@@ -1,40 +1,68 @@
- <!-- about -->
-      <section class="about section">
-        <div class="container">
-         <p class="about-upper-title upper-title ">tradition and love</p>
-          <h2 class="about-title title">how it’s made?</h2>
-          <picture>
-            <source media="(min-width:320px)" srcset="
-            ./images/about-image/about-image-sm@1x.png 1x,
-            ./images/about-image/about-image-sm@2x.png 2x" 
-            type="image/png" />
-            <img
-              class="about-img"
-              src="./images/about-image/about-image-sm@1x.png " 
-              alt="Cow"
-              width="280"
-              height="279"
-              loading="lazy"
-            />
-          </picture>
-          <div class="about-description"> 
-            <p class="about-description__lable">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="about-description__text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-          </p>
-          <p class="about-description__addition">
-            Aliquam erat volutpat. Aenean accumsan.
-          </p>
+<!-- about -->
+<section class="about section">
+  <div class="container">
+    <p class="about-upper-title upper-title">tradition and love</p>
+    <h2 class="about-title title">how it’s made?</h2>
+    <div class="about-card">
+      <picture>
+        <source
+          media="(min-width:1200px)"
+          srcset="
+            ./images/about-image/about-image-desk@1x.png 1x,
+            ./images/about-image/about-image-desk@2x.png 2x
+          "
+          type="image/png"
+        />
 
-          <button class="about-description__btn btn" type="button">Read more &#62</button>
-           </div>
-         
-        </div>
-      </section>
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/about-image/about-image-tab@1x.png 1x,
+            ./images/about-image/about-image-tab@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width:768px)"
+          srcset="
+            ./images/about-image/about-image-sm@1x.png 1x,
+            ./images/about-image/about-image-sm@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="about-img"
+          src="./images/about-image/about-image-sm@1x.png "
+          alt="Cow"
+          width="280"
+          height="279"
+          loading="lazy"
+        />
+      </picture>
+      <div class="about-description">
+        <p class="about-description__lable">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about-description__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt. Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <p class="about-description__addition">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+
+        <button class="about-description__btn btn" type="button">
+          Read more
+          <svg class="about-button__arrow" width="7" height="15">
+            <use href="./icons-about/sprite.svg#icon-button_arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
