@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop__maps {
   position: fixed;
   top: 10px;
   left: 10px;
@@ -25,7 +25,7 @@
     height: 100%;
   }
 }
-.backdrop.is-hidden {
+.backdrop__maps.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: visible;
