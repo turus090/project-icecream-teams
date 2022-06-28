@@ -1,5 +1,5 @@
 <!-- about -->
-<section class="about section">
+<section class="about section" id="tradition">
   <div class="container">
     <p class="about-upper-title upper-title">tradition and love</p>
     <h2 class="about-title title">how it’s made?</h2>
@@ -56,7 +56,11 @@
           Aliquam erat volutpat. Aenean accumsan.
         </p>
 
-        <button class="about-description__btn btn" type="button">
+        <button
+          class="about-description__btn"
+          type="button"
+          about-data-modal-open
+        >
           Read more
           <svg class="about-button__arrow" width="7" height="15">
             <use href="./icons-about/sprite.svg#icon-button_arrow"></use>
@@ -66,3 +70,50 @@
     </div>
   </div>
 </section>
+<!-- about-modalka -->
+<div class="about-modal-backdrop is-hidden" about-data-modal>
+  <div class="about-modal-data">
+    <button class="about-modal-data__btn" type="button" about-data-modal-close>
+      <svg class="about-modal-data__svg" width="18" height="18">
+        <use href="./icons-about/sprite.svg#cross"></use>
+      </svg>
+    </button>
+    <div class="about-modal__description">
+      <h4 class="about-modal__title upper-title">Favorite taste</h4>
+      <p class="about-modal__lable">Strawberry</p>
+      <ul class="about-modal__list">
+        <li class="about-modal__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod labore et dolore magna aliqua.
+        </li>
+        <li class="about-modal__item">
+          Quis ipsum suspendisse ultrices gravida.
+        </li>
+        <li class="about-modal__item">Risus commodo viverra maecenas.</li>
+      </ul>
+      <p class="about-modal__lable">Cherry</p>
+      <ul class="about-modal__list">
+        <li class="about-modal__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod labore et dolore magna aliqua.
+        </li>
+        <li class="about-modal__item">
+          Quis ipsum suspendisse ultrices gravida.
+        </li>
+        <li class="about-modal__item">Risus commodo viverra maecenas.</li>
+      </ul>
+      <p class="about-modal__lable">Raspberry</p>
+      <ul class="about-modal__list">
+        <li class="about-modal__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod labore et dolore magna aliqua.
+        </li>
+        <li class="about-modal__item">
+          Quis ipsum suspendisse ultrices gravida.
+        </li>
+        <li class="about-modal__item">Risus commodo viverra maecenas.</li>
+      </ul>
+    </div>
+    <script src="./about-modal.js"></script>
+  </div>
+</div>
