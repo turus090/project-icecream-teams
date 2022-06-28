@@ -8,7 +8,6 @@
   width: calc(100% - 20px);
   height: calc(100% - 20px);
 
-  // background-color: var(--secondary-bgc);
 
   opacity: 1;
   transition: opacity 250ms 300ms;
@@ -53,7 +52,7 @@
 .maps-logo__svg {
   width: 200px;
  height: 50px;
-  // display: block;
+  
   margin: auto auto;
   transition-property: fill;
   transition-duration: var(--transition-duration);
@@ -163,7 +162,7 @@
   display: flex;
   flex-direction: column;
 }
-.contacts-card__list {
-  text-align: center;
-}
+// .contacts-__list {
+//   text-align: center;
+// }
 

@@ -35,7 +35,7 @@
 }
 .modal-data {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -49,13 +49,18 @@
   background-color: #ffb8ca;
   border-radius: 10px;
 
-  transition-duration: 1000ms;
-  transition-timing-function: 300ms;
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 700px;
+    border-radius: 10px;
+    overflow-y:hidden;
+  }
+
 
  
   @media screen and (min-width: 768px) {
     width: 528px;
-    max-height: 700px;
+    height: 700px;
     border-radius: 10px;
   }
 }
@@ -87,7 +92,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 5px;
-  // text-shadow: 1px 1px 2px var(--accent-color);
+  
 }
 .modal-data__title-logo {
   margin-bottom: 15px;
@@ -119,6 +124,10 @@
   text-transform: uppercase;
 
   color: var(--red-text-color);
+
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-bezier);
 
   &:focus-within,
   &:hover {
@@ -153,6 +162,10 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   padding-left:30px;
+
+  transition-property: box-border fill;
+  transition-duration: var(--transition-duration), var(--transition-duration);
+  transition-timing-function: var(--timing-bezier), var(--timing-bezier);
 
   &:hover,
   :focus {
@@ -286,6 +299,11 @@
 
   border: 1px solid var(--accent-color);
   border-radius: 2px;
+
+  transition-property:border-color;
+  transition-duration: var(--timing-bezier);
+  transition-timing-function: var(--transition-duration);
+
 
   &:hover {
     cursor: pointer;
