@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop__maps {
   position: fixed;
   top: 10px;
   left: 10px;
@@ -25,7 +25,7 @@
     height: 100%;
   }
 }
-.backdrop.is-hidden {
+.backdrop__maps.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: visible;
@@ -87,7 +87,7 @@
   overflow-x: scroll;
 
   width: 100vw;
-  height: 90vh;
+  height: 75vh;
 
   padding: 15px 15px;
   border: 1px solid var(--red-text-color);
@@ -153,6 +153,7 @@
 .maps-data__title {
   margin: 0;
   text-align: center;
+  color:var(--white-text-color);
 }
 .maps-data__title-logo {
   margin-bottom: 10px;
