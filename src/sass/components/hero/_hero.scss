@@ -206,7 +206,7 @@
   bottom: 81px;
   left: 184px;
   letter-spacing: 0;
-  @media screen and (max-width: 768px) {
+  @include mq(mobile-only) {
     display: none;
   }
 
@@ -234,7 +234,7 @@
   border: transparent;
   width: 18px;
   height: 18px;
-  @media screen and (max-width: 768px) {
+  @include mq(mobile-only) {
     display: none;
   }
 
@@ -252,3 +252,7 @@
     width: 8px;
   }
 }
+
+ .hero__link {
+  color: inherit;
+ }
