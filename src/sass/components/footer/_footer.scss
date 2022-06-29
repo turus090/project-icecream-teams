@@ -1,0 +1,168 @@
+.footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--secondary-bgc);
+    
+ 
+    &__container { 
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    }
+
+    &__text {
+        width: 234px;
+        text-align: inherit;
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            width: 340px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: unset;
+            
+        }
+    }
+
+    &__upper-title {
+        white-space: pre-line;
+        text-align: start;
+
+    }
+
+   
+
+    .socials-networks {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        justify-content: end;
+        margin-bottom: 40px;
+        padding: 0;
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;               
+            width: 32px;
+            height: 32px;
+            color: var(--white-text-color);
+            background-color: var(--social-icon-bgc);
+            border-radius: 50%;
+            transition: var(--timing-bezier), var(--transition-duration);
+
+            &:focus,
+            &:hover
+             {
+                color: var(--social-icon-bgc);
+                background-color: var(--red-text-color);
+            }
+
+        }
+
+        &__icon {
+            fill: currentColor;
+            &:hover,
+            :focus {
+                color: var(--social-icon-bgc);
+                background-color: var(--red-text-color);
+            }
+        }
+    }
+
+    .footer-contacts {
+        display: flex;
+        justify-content: end;
+       
+
+        &__text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 22.32px;
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 26px;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 30px;  
+            }
+        }
+        &__address {
+            display: flex;
+            gap: 5px;
+            font-size: 12px;
+        }
+        &__phone {
+            font-style: normal;
+            text-decoration: none;
+            font-family: DM Sans;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 22.32px;
+            color: var(--red-text-color);
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 26px;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 30px;  
+            }
+            
+        }
+
+    }
+
+    .footer-contect {
+        /*padding-top: 16px;
+        padding-bottom: 3px;
+        border-top: 1px solid #E1E1E1;*/
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: auto;
+            border-top: 1px solid #E1E1E1;
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            
+        }
+        
+
+
+        &__text {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+            color: var(--grey-text-color);
+            text-align: center;
+            @media screen and (max-width: 768px) {
+                white-space: pre-line;
+            }
+
+            @media screen and (min-width: 768px) {
+                line-height: 26px;
+                letter-spacing: 2%;
+            }
+        }
+    }
+}
