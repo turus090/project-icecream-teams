@@ -125,6 +125,7 @@
   min-width: auto;
   padding-left: 14px;
   padding-right: 14px;
+  letter-spacing: 0;
 
   @include mq(desktop) {
     padding-left: 23px;
@@ -234,6 +235,12 @@
   border: transparent;
   width: 18px;
   height: 18px;
+  transition: background-color 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: #c2e297;
+  }
   @include mq(mobile-only) {
     display: none;
   }
@@ -253,6 +260,111 @@
   }
 }
 
- .hero__link {
+.hero__link {
   color: inherit;
- }
+}
+
+.hero__nomber {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  z-index: 2;
+  @include mq(desktop) {
+    
+      font-size: 46px;
+      line-height: 53px;
+      margin-bottom: 2px;
+      
+    
+      
+      
+      
+    
+      
+  }
+
+  
+}
+
+.hero__list {
+  position: absolute;
+  top: 100px;
+  right: 32px;
+  width: 100px;
+  
+  
+
+  display: block;
+  @include mq(mobile-only) {
+    display: none;
+    
+  }
+
+    @include mq(desktop) {
+      right: 34px;
+      top: 152px;
+    }
+
+
+}
+
+.hero__txt {
+  display: inline-block;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  letter-spacing: 0;
+
+  color: #ffffff;
+  width: 100%;
+  @include mq(desktop){
+    font-size: 14px;
+      line-height: 18px;
+  }
+}
+
+.hero__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: right;
+  width: 100%;
+  padding-right: 8px;
+  margin-bottom: 16px;
+@include mq(desktop) {
+  padding-right: 0;
+}
+  
+}
+
+.hero__item::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  justify-content: right;
+  
+  top: -2px;
+  right: 0;
+
+  @include mq(desktop) {
+    width: 30px;
+      height: 30px;
+      right: -18px;
+      top: -3px;
+  }
+}
