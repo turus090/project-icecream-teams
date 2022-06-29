@@ -1,6 +1,6 @@
 
 
-.about {
+.about-section {
     
     text-align: center;
     background-color: var(--secondary-bgc) ;
@@ -195,12 +195,12 @@
 }
 
 
-.about-modal-data {
+.data-modal-about {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
+
     overflow-y: scroll;
 
     width: 90vw;
@@ -228,7 +228,7 @@
        
     }
 }
-.about-modal-data__btn {
+.data-modal-about__btn {
    
     position: absolute;
         top: 8px;
@@ -246,7 +246,7 @@
             border: 1px solid rgba(0, 0, 0, 0.1);
             
 }
- .about-modal-data__svg {
+ .data-modal-about__svg {
     display: block;
         margin: auto auto;
         transition-property: fill;
