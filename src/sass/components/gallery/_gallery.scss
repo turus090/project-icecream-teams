@@ -21,7 +21,8 @@
 
     border-radius: 10px;
     transform: scale(1);
-    transition: transform 250ms linear 150ms, box-shadow 250ms linear 150ms;
+    transition: transform var(--transition-duration) linear 150ms,
+      box-shadow var(--transition-duration) linear 150ms;
 
     .gallery-img:hover &,
     .gallery-img:focus & {
