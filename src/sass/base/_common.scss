@@ -89,11 +89,28 @@ img {
 .btn--red {
   color: #ffffff;
   background-color: #d41442;
+
+  transition-property: box-shadow;
+  transition-duration: var(--timing-bezier);
+  transition-timing-function: 2000ms;
+
+  &:focus,
+  &:hover {
+    box-shadow: inset 3px 3px 20px #a40329;
+  }
 }
 
 .btn--white {
   color: #d41443;
   background-color: #ffffff;
+  transition-property: box-shadow;
+  transition-duration: var(--timing-bezier);
+  transition-timing-function: var(--transition-duration);
+
+  &:focus,
+  &:hover {
+    box-shadow: inset 3px 3px 10px #da4141;
+  }
 }
 
 .btn--white:focus,
@@ -125,15 +142,3 @@ img {
 html {
   scroll-behavior: smooth;
 }
-
-// @keyframes button-scale {
-//   0% {
-//     transform: scale(1.1);
-//   }
-//   50% {
-//     transform: scale(0.9);
-//   }
-//   100% {
-//     transform: scale(0.9);
-//   }
-// }
