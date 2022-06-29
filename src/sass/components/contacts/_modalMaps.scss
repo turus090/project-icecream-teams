@@ -86,7 +86,7 @@
   overflow-x: scroll;
 
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
 
   padding: 15px 15px;
   border: 1px solid var(--red-text-color);
@@ -98,9 +98,16 @@
 
   @media screen and (min-width: 768px) {
     width: 700px;
-    max-height: 500px;
-    border-radius: 10px;
+    max-height: 800px;
+   
   }
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+    max-height: 900px;
+   
+  }
+
+
 }
 .maps-frame{
   width: 100%;
@@ -113,12 +120,17 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+  
   }
 }
 
 .maps__item {
+
+  
   border-radius: 10px;
   overflow: hidden;
+
+  
 
   margin-right: 10px;
   border: 1px solid red;
@@ -128,6 +140,13 @@
   margin: 5px;
 
   box-shadow: 1px 1px 10px rgb(223, 85, 85);
+width:calc(100% - 10px);
+
+  @media screen and (min-width: 768px) {
+    // display: flex;
+   width: 33%;
+  
+  }
 }
 
 
