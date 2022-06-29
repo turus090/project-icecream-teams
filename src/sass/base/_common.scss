@@ -9,16 +9,15 @@ body {
   letter-spacing: 0.04em;
 }
 
-body.modal-open{
+body.modal-open {
   overflow: hidden;
 }
-body.maps-open{
+body.maps-open {
   overflow: hidden;
 }
-body.franchise-open{
+body.franchise-open {
   overflow: hidden;
 }
-
 
 .section {
   padding-top: 60px;
@@ -70,7 +69,7 @@ img {
   }
 }
 
-.btn { 
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +98,7 @@ img {
 
 .btn--white:focus,
 .btn--white:hover {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
 }
 
 .btn--hero {
@@ -126,3 +125,15 @@ img {
 html {
   scroll-behavior: smooth;
 }
+
+// @keyframes button-scale {
+//   0% {
+//     transform: scale(1.1);
+//   }
+//   50% {
+//     transform: scale(0.9);
+//   }
+//   100% {
+//     transform: scale(0.9);
+//   }
+// }
