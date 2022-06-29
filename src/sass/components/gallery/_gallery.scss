@@ -21,10 +21,10 @@
 
     border-radius: 10px;
     transform: scale(1);
-    transition: transform 300ms linear 150ms, box-shadow 300ms linear 150ms;
+    transition: transform 250ms linear 150ms, box-shadow 250ms linear 150ms;
 
-    &:hover,
-    &:focus {
+    .gallery-img:hover &,
+    .gallery-img:focus & {
       box-shadow: 0px 0px 18px #ffa5ba;
       transform: scale(1.1);
     }
