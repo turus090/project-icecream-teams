@@ -1,6 +1,6 @@
 
 
-.about {
+.about-section {
     
     text-align: center;
     background-color: var(--secondary-bgc) ;
@@ -166,22 +166,6 @@
              box-shadow: inset 3px 3px 10px #da4141;
         }
 
-    display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    
-        min-width: 107px;
-        height: 44px;
-    
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
-    
-        border-radius: 22px;
-        border: none;
-        cursor: pointer;
-    
-
 
 }
 .about-button__arrow {
@@ -190,7 +174,7 @@
 }
 // modalka
 .about-modal-backdrop {
-   
+         z-index: 100;
          position: fixed;
          top: 0;
          left: 0;
@@ -211,12 +195,12 @@
 }
 
 
-.about-modal-data {
+.data-modal-about {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100;
+
     overflow-y: scroll;
 
     width: 90vw;
@@ -244,7 +228,7 @@
        
     }
 }
-.about-modal-data__btn {
+.data-modal-about__btn {
    
     position: absolute;
         top: 8px;
@@ -258,22 +242,22 @@
         border-radius: 50%;
         margin-left: auto;
         padding: 0;
-        background-color: #fff;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        // fill: #ffb8ca;
+        background-color: var(--white-text-color);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            
 }
- .about-modal-data__svg {
+ .data-modal-about__svg {
     display: block;
         margin: auto auto;
         transition-property: fill;
         transition-duration: var(--transition-duration);
         transition-timing-function: var(--timing-bezier);
+        fill: #ffb8ca;
+        &:hover,
+        :focus {
     
-        // &:hover,
-        // :focus {
-    
-        //     fill: var(--accent-color);
-        // }
+            fill: var(--accent-color);
+        }
  }
 
 .about-modal__description {
