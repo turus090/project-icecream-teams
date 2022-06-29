@@ -90,15 +90,14 @@ img {
   color: #ffffff;
   background-color: #d41442;
 
-  transition-property:box-shadow ;
+
+  transition-property: box-shadow;
   transition-duration: var(--timing-bezier);
   transition-timing-function: 2000ms;
-
 
   &:focus,
   &:hover {
     box-shadow: inset 3px 3px 20px #a40329;
-    
 
   }
 }
@@ -106,7 +105,9 @@ img {
 .btn--white {
   color: #d41443;
   background-color: #ffffff;
-  transition-property:box-shadow;
+
+  transition-property: box-shadow;
+
   transition-duration: var(--timing-bezier);
   transition-timing-function: var(--transition-duration);
 
