@@ -9,6 +9,8 @@
 
     &__container {
         @media screen and (min-width: 768px) {
+            padding-left: 16px;
+            padding-right: 16px;
             max-width: 768px;
             margin-bottom: 40px;
             display: flex;
@@ -39,6 +41,7 @@
         text-align: start;
         font-weight: 400;
         @include mq (tablet) {
+            margin-bottom: 0;
             width: 340px;
         }
         @include mq (desktop) {
@@ -119,16 +122,16 @@
             font-style: normal;
             font-weight: 700;
             font-size: 12px;
-            line-height: 22.32px;
+            line-height: 1.86;
 
             @media screen and (min-width: 768px) {
                 font-size: 14px;
-                line-height: 186%;
+                line-height: 1.86;
             }
 
             @media screen and (min-width: 1200px) {
                 font-size: 16px;
-                line-height: 186%;
+                line-height: 1.86;
             }
         }
 
@@ -144,17 +147,17 @@
             font-family: DM Sans;
             font-size: 12px;
             font-weight: 500;
-            line-height: 186%;
+            line-height: 1.86;
             color: var(--red-text-color);
 
             @media screen and (min-width: 768px) {
                 font-size: 14px;
-                line-height: 26px;
+                line-height: 1.86;
             }
 
             @media screen and (min-width: 1200px) {
                 font-size: 16px;
-                line-height: 186%;
+                line-height: 1.86;
             }
     }
 
@@ -165,7 +168,7 @@
             position: relative;
             font-size: 14px;
             font-weight: 700;
-            line-height: 152%;
+            line-height: 1.52;
             color: var(--grey-text-color);
             text-align: center;
             padding-top: 16px;
@@ -175,14 +178,16 @@
                 display: block;
                 position: absolute;
                 width: 100%;
-                max-width: 1168px;
+    
                 top: 0;
                 left: 0;
                 border-top: 1px solid #E1E1E1;
+    
                 @media screen and (min-width: 768px) {
                     margin-bottom: 8px;
-                    
+    
                 }
+                
                 @media screen and (min-width: 1200px) {
                     left: 16px;
         
