@@ -48,7 +48,7 @@
           </svg>
         </button>
         <button
-          data-modal-open
+          id="btn-modal-open"
           class="btn header__btn header__btn-menu"
           type="button"
         >
@@ -77,7 +77,7 @@
         </ul>
       </div>
     </div>
-    <button data-modal-open class="btn header__btn desktop__btn" type="button">
+    <button id="btn-modal-open"  class="btn header__btn desktop__btn" type="button">
       Buy now
 
       <svg class="button__arrow" width="7" height="15">
@@ -86,3 +86,16 @@
     </button>
   </div>
 </header>
+
+<div class="header-wrapper">
+  <div class="header-modal">
+    <div class="header-cross">&#10006</div>
+    <form class="header-modal__form" action="#">
+      <label class="header-modal__label" for="phone-number-modal">
+        Phone number
+      </label>
+      <input class="header-modal__input" type="text" id="phone-number-modal">
+      <button class="header-modal__button" type="submit">Send</button>
+    </form>
+  </div>
+</div>
